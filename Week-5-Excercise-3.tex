@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multirow} % or multirows
+\usepackage{siunitx} % Required for alignment
+\sisetup{round-mode        = places, % Rounds numbers
+round-precision        = 2, % to 2 places
+}
+\begin{document}
+\begin{table}[h!]
+	\begin{center}
+		\caption{Multi table.}
+		\label{tab:table}
+		\begin{tabular}{l|s|r}
+			\hline
+			\textbf{value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+			$\alpha$ & $\beta$ & $\games$ \\
+			\hline
+			\multirow{2}{*}{12} & 1110.1 & a\\ % <-- Combining 2 rows with arbitrary with (*) and content 12
+			& 10.1 & b\\ % <-- Content of first column omitted.
+			\hline			\multirow{2}{*}{12}{\includegraphics[width=0.07\linewidth]{Polo-g}}\\ 25 & 345.1132321 & c \\
+				\hline
+				36 & 35.1235321 & c \\
+			\end{tabular}
+		\end{center}
+	\end{table}
+		\end{document}

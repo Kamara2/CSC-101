@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multirow} % Required for multirows
+\usepackage{siunitx} % Required for alignment
+\sisetup{
+	round-mode  =  places, % Rounds numbers
+	round-precision= 2, % to 2 places
+}
+\begin{document}
+	\begin{table}[h!]
+		\centering
+		\caption{multirow}
+		\label{tab:table1}
+		\begin{tabular}{|l|S|r|}
+			\hline
+			\textbf{Value 1}&\textbf{Value 2}&\textbf{Value 3}\\
+			$ \alpha $&$ \beta $&$ \gamma $\\
+			\hline
+			\multicolumn{2}{|c|}{12}&a\\ % <-- Consisting two cells with alignment |c| and content 12.
+			\hline
+			2&10.1&b\\
+			3&23.113231&c\\
+			\multicolumn{3}{|c|}{\includegraphics[width=0.12\linewidth]{Polo-g}}\\
+			\hline
+			4&25.113231&d \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{document}

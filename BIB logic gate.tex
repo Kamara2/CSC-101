@@ -1,0 +1,174 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+	\title{Logic Gates}
+	\author{Kamara Nsofor}
+
+	
+	
+\maketitle
+\newpage
+\section{Table Of Contents}
+	
+	\begin{itemize}
+		\item Logic Gate
+		\item Type of Logic Gates
+		\item Truth Tables
+		\item Summary		
+	\end{itemize}
+	
+	
+\newpage
+\section{Logic Gate}
+	A logic gate is a building block of a digital circuit which is at the heart of any computer. Behind every digital system is a logic gate.\\
+	Logic gates perform logical operartions that take binary input (0s and 1s) and produce a single binary output. They are used in most electronic device like smartphone, Tablets Memeory devices~\cite{}.
+	
+\section{Type of Logic Gates}
+		The type of logic gate are:
+		\begin{itemize}
+			\item And Gate
+			\item OR Gate
+			\item NOT Gate
+			\item NAND Gate
+			\item NOR Gate
+			\item XOR Gate
+			\item XNOR Gate
+		\end{itemize}
+	
+\subsection{AND Gate}
+\includegraphics[width= 0.3\linewidth]{And Gate}%picture of And gate
+The AND gate produces a true output (result of 1) only for the single case when all of the input variables are 1 and a false output(result of 0) where one or more inputs are 0.
+\subsection{OR Gate}
+\includegraphics[width= 0.3\linewidth]{OR-Gate}%picture of OR gate
+The OR gate produces a true output (result of 1) when any of the input variable is 1 and a false output (result of 0)only when all the input variable are 0.
+\subsection{NOT Gate}
+\includegraphics[width= 0.3\linewidth]{Not Gate}%picture of NOT gate
+The NOT gate reverses the original input to give an inverted output.
+\subsection{NOR Gate}
+\includegraphics[width= 0.3\linewidth]{NOR-Gate}%picture of NOR gate
+The NOR gate gives a true output (result of 1)only when both inputs are false(0).
+\subsection{NAND Gate}
+\includegraphics[width= 0.3\linewidth]{NAND-Gate}%picture of NAND gate
+The NAND gate gives a false output (result of 0)when both inputs are true(1).
+\subsection{XOR Gate}
+\includegraphics[width= 0.7\linewidth]{XOR-Gate}%picture of XOR gate
+The XOR gate Gives a true output (result of 1) if one, and only one, of the inputs to the gate is true (1).
+\subsection{XNOR Gate}
+\includegraphics[width= 0.3\linewidth]{XNOR-Gate}%picture of XNOR gate
+The XNOR gate gives a true output (1), if the inputs are the same, and a false output (0) if the inputs are different.
+		
+		
+		
+\section{Tables}
+\begin{table}
+	\begin{center}
+		\label{tab:and}
+		\caption{AND-Table}
+		\begin{tabular}{|c|c|c|}
+			A & B & A AND B\\
+			\hline
+			1&1&1\\
+			1&0&0\\
+			0&1&0\\
+			0&0&0\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:or}
+		\caption{OR-Table}
+		\begin{tabular}{|c|c|c|}
+			A & B & A OR B\\
+			\hline
+			1&1&1\\
+			1&0&1\\
+			0&1&1\\
+			0&0&0\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:not}
+		\caption{NOT-Table}
+		\begin{tabular}{|c|c|}
+			A & NOT A\\
+			\hline
+			1&0\\
+			0&1\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:table4}
+		\caption{NAND-Table}
+		\begin{tabular}{|c|c|c|}
+			A& B & A NAND B\\
+			\hline
+			1&1&0\\
+			1&0&1\\
+			0&1&1\\
+			0&0&1\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:table5}
+		\caption{NOR-Table}
+		\begin{tabular}{|c|c|c|}
+			A & B & A NOR B\\
+			\hline
+			1&1&0\\
+			1&0&0\\
+			0&1&0\\
+			0&0&1\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:table6}
+		\caption{XOR-Table}
+		\begin{tabular}{|c|c|c|}
+			A & B &A XOR B\\
+			\hline
+			1&1&0\\
+			1&0&1\\
+			0&1&1\\
+			0&0&0\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\label{tab:table7}
+		\caption{XNOR-Table}
+		\begin{tabular}{|c|c|c|}
+			A & B & A XNOR B\\
+			\hline
+			1&1&1\\
+			1&0&0\\
+			0&1&0\\
+			0&0&1\\
+		\end{tabular}
+	\end{center}
+\end{table}
+\newpage
+\section{Summary}
+%summary
+referenced from\cite{Okoacha2021logig}
+
+\bibliography{bib}
+\bibliographystyle{ieeetr}
+
+\end{document}
